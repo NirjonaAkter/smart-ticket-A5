@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P-Ticket</title>
+        <!-- tailwind Daisy -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- font style -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- tailwind custome class -->
+        <script>
+                tailwind.config = {
+                  theme: {
+                    extend: {
+                      colors: {
+                        clifford: '#1DD100',
+                        'color-primary': '#1DD100',
+                        'color-primary-bg': '#1DD10066',
+                        
+                      }
+                    }
+                  }
+                }
+              </script>
+        <!-- custome style -->
+        <style>
+                .font-raleway{
+                    font-family: "Raleway", sans-serif;
+                }
+            </style>
+            
+    </head>
 <body>
+    <header>
+        <!-- nav start -->
+        <nav class="px-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                    <a class="btn bg-color-primary-bg text-color-primary">Bus <img src="images/tabler-icon-bus.svg" alt=""></a>
+                    </div>
+            </div>
+        </nav>
+        <!-- end of nav -->
+        <!-- banner start-->
+        <div class="px-10">
+            <div class="hero min-h-screen relative rounded-3xl overflow-hidden" style="background-image: url(images/banner.png);">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+                <div class="hero-content text-center text-neutral-content relative z-10">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <br><span class="text-color-primary"> P Paribahan</span></h1>
+                        <p class="mb-5 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                        <button class="btn bg-color-primary text-black font-bold">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- banner end -->
+
+    </header>
+    <main>
+        <div>
+            <h1 class="py-5 text-4xl font-bold text-center text-black">Best offers for you</h1>
+        </div>
+
+    </main>
     
 </body>
 </html>
